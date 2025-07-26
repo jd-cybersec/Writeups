@@ -117,8 +117,6 @@ This exercise showcases:
 - Parameter fuzzing
 - Sensitive data extraction through automation
 
-These are foundational web reconnaissance techniques used in professional penetration testing and bug bounty workflows. The methodology used here reflects practical industry standards, and this write-up serves as a strong demonstration of recon and fuzzing skillset for a cybersecurity portfolio.
+These are foundational web reconnaissance techniques used in professional penetration testing and bug bounty workflows.
 
 ---
-
-> 📂 A copy of this write-up is also available as a downloadable [PDF version](./FFUF_Recon_Portfolio_Writeup_Jordan_Davis_Formatted.pdf) in this repository.

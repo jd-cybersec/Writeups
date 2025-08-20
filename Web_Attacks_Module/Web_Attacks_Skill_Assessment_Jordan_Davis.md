@@ -51,7 +51,7 @@ Response contained JSON user profile data. The predictable `uid` parameter sugge
 Used **Burp Intruder** to fuzz the `uid` parameter (1–100).  
 Confirmed sensitive profile data exposure across users.
 
-![Burp Intruder Fuzzing Attack](Web_Attacks_Module/images/intruder-fuzz.png)
+![Burp Intruder Fuzzing Attack](images/intruder-fuzz.png)
 
 ```
 {
@@ -80,7 +80,7 @@ GET /reset.php?uid=1&token=<stolen_token>&password=password
 
 Result: Arbitrary **account takeover**.  
 
-![Password Reset Abuse](Web_Attacks_Module/images/token-abuse.png)
+![Password Reset Abuse](images/token-abuse.png)
 
 ✅ Confirmed by resetting multiple accounts.
 
@@ -95,7 +95,7 @@ During enumeration, identified admin account:
 
 Reset password for UID 52 via token abuse. Logged in as **Administrator**, unlocking privileged functionality (XML event creation).
 
-![Admin Enumeration](Web_Attacks_Module/images/admin-enum.png)
+![Admin Enumeration](images/admin-enum.png)
 
 ✅ **Impact:** Full administrative access.
 
@@ -126,7 +126,7 @@ Reflected `name` field made it ideal for injection.
 
 Result: Retrieved `/etc/passwd`. Confirmed **XXE file read**.
 
-![XXE Exploit](Web_Attacks_Module/images/xxe-exploit.png)
+![XXE Exploit](images/xxe-exploit.png)
 
 ---
 
